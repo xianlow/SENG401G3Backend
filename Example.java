@@ -21,10 +21,9 @@ public class Example {
 
         eventsForID = eventStore.getEventsForId(id);
 
-        int i = 0;
+        
         for(StringChangedEvent event : eventsForID){
             System.out.println(event.getNewValue());
-            i++;
         }
 
        System.out.println(queryHandler.getValue(id)); // prints "nice"
