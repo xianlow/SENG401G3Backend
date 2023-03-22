@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/posts/{postsId}": {
+      "name": "/posts/{postsId}",
+      "lambdaFunction": "rhapsodyLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
