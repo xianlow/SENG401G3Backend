@@ -13,7 +13,11 @@ public class AccessDatabase {
     private Connection dbConnect;
     private ResultSet results;
 
-    public ArrayList<String> getPost(int id){
+    EventStore eventStore = new EventStore();
+    StringCommandQuery commandHandler = new StringCommandQuery(eventStore);
+    StringQueryHandler queryHandler = new StringQueryHandler(eventStore);
+
+    public ArrayList<String> getPosts(int id){
         ArrayList<String> post = new ArrayList<>();
         try {
             Statement myStmt = dbConnect.createStatement();
@@ -58,11 +62,13 @@ public class AccessDatabase {
 
     }
 
-    public void addPost(int id, String val, LocalDate timeStamp){
+    public void addPost(String id, String val, LocalDate timeStamp){
         try{
+            commandHandler.handle(new ChangeStringCommand(id, val));
+
             Statement myStmt = dbConnect.createStatement();
                 
-            String tmp = "INSERT INTO EVENTS " + "VALUES ("+id+", '"+val+"', "+timeStamp+")";
+            String tmp = "INSERT INTO EVENTS " + "VALUES ("+id+", '"+queryHandler.getValue(id)+"', "+timeStamp+")";
             myStmt.executeUpdate(tmp);
             myStmt.close();
         }catch(SQLException e){
