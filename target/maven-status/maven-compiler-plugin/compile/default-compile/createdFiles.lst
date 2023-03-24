@@ -1,0 +1,12 @@
+com\rhapsody\model\StringCommandQuery.class
+com\rhapsody\model\StringChangedEvent.class
+com\rhapsody\repository\RhapsodyRepo.class
+com\rhapsody\model\EventStore.class
+com\rhapsody\model\Event.class
+com\rhapsody\controller\RhapsodyController.class
+com\rhapsody\model\AccessDatabase.class
+com\rhapsody\model\StringQueryHandler.class
+com\rhapsody\RhapsodyApplication.class
+com\rhapsody\model\StringAggregate.class
+com\rhapsody\model\RhapsodyModel.class
+com\rhapsody\model\ChangeStringCommand.class

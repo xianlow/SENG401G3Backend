@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SENG401G3Backend.iml" filepath="$PROJECT_DIR$/SENG401G3Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rhapsody.iml" filepath="$PROJECT_DIR$/rhapsody.iml" />
+    </modules>
+  </component>
+</project>
