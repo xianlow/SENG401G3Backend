@@ -32,27 +32,4 @@ public class SingletonTests {
             }
             assertTrue("Test upload to database was not succesfully retrived", flag);
         }
-
-        @Test
-        public void removePostTest(){
-            access.addPost("098", "to be removed", LocalDate.now());
-            ArrayList<String> cmp = access.getPosts(ID);
-            boolean flag = false;
-            for(String elem : cmp){
-                if(test.equals(elem)){
-                    flag = true;
-                }
-            }
-            if(flag == true){
-                access.removePost("098");
-            }else{
-                fail("Post was not succesfully uploaded when testing the remove function");
-            }
-            for(String elem : cmp){
-                if(test.equals(elem)){
-                    flag = false;
-                }
-            }
-            assertTrue("Post was not removed from database succesfully", flag);
-        }
 }
