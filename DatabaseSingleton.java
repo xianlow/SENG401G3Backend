@@ -1,7 +1,6 @@
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Vector;
 
 public class DatabaseSingleton {
     private static DatabaseSingleton onlyInstance;
@@ -34,7 +33,7 @@ public class DatabaseSingleton {
         access.dbConnectClose();
         
     }
-    public Void removePost(String val){
+    public void removePost(String val){
         access.initializeConnection();
         access.removePost(val);
         access.dbConnectClose();

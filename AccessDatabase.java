@@ -17,13 +17,13 @@ public class AccessDatabase {
     StringCommandQuery commandHandler = new StringCommandQuery(eventStore);
     StringQueryHandler queryHandler = new StringQueryHandler(eventStore);
 
-    public ArrayList<String> getPosts(int id){
+    public ArrayList<String> getPosts(String id){
         ArrayList<String> post = new ArrayList<>();
         try {
             Statement myStmt = dbConnect.createStatement();
             results = myStmt.executeQuery("SELECT * FROM " + "EVENTS");
             while(results.next()){
-                if(results.getInt("eventId") == id){
+                if(results.getString("eventId").equals(id)){
                     post.add(results.getString("aggregateId"));
                 }
             }
