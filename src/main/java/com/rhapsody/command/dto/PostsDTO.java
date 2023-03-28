@@ -1,20 +1,14 @@
 package com.rhapsody.command.dto;
 
-import lombok.Data;
 
-@Data
+import lombok.Value;
+
+@Value
 public class PostsDTO {
 
-    private int id;
-    private String content;
-    private String title;
-    public int getId() {
-        return id;
-    }
-    public String getContent() {
-        return content;
-    }
-    public String getTitle() {
-        return title;
-    }
+    private final String id;
+    private final String content;
+    private final String title;
+    private final String department;
+
 }

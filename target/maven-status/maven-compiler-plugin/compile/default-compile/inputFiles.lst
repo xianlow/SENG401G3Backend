@@ -1,14 +1,14 @@
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\command\controller\RhapsodyCommandController.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\command\service\PostsCommandService.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\RhapsodyApplication.java
+E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\query\queries\ListPostsDepartmentQuery.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\query\entity\RhapsodyModel.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\command\commands\CreatePostCommand.java
-E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\query\entity\TokenEntry.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\command\dto\PostsDTO.java
-E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\query\queries\FindAllPostsQuery.java
+E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\config\SwaggerConfiguration.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\command\events\CreatePostEvent.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\query\service\PostsQueryService.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\query\repository\PostsRepository.java
-E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\query\repository\PostsRepositoryProjector.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\query\controller\PostsQueryController.java
 E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\command\aggregate\PostsAggregate.java
+E:\GithubPulls\SENG401G3Backend\src\main\java\com\rhapsody\projection\PostsRepositoryProjector.java

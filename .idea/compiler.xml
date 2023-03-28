@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="rhapsody" target="17" />
+      <module name="rhapsody" target="1.8" />
       <module name="SENG401G3Backend" target="17" />
     </bytecodeTargetLevel>
   </component>

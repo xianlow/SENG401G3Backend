@@ -20,28 +20,14 @@ public class PostsAggregate {
     protected PostsAggregate() {}
     @CommandHandler
     public PostsAggregate(CreatePostCommand command){
-        Assert.notNull(command.getId(), "ID should not be null");
-        apply(new CreatePostEvent(command.getId(), command.getTitle(), command.getContent()));
-
-    }
-    @CommandHandler
-    public void createPost(CreatePostCommand command){
-
-        apply(new CreatePostEvent(command.getId(), command.getTitle(), command.getContent()));
-    }
-
-    @EventSourcingHandler
-    private void createPost(CreatePostEvent event){
-        this.id = event.getId();
-        this.title = event.getTitle();
-        this.content = event.getContent();
+        apply(new CreatePostEvent(command.getId(), command.getTitle(), command.getContent(), command.getDepartment()));
     }
     @EventSourcingHandler
     public void on(CreatePostEvent event) {
         this.id = event.getId();
         this.title = event.getTitle();
         this.content = event.getContent();
-        //apply(new CreatePostEvent(event.getId(), event.getTitle(), event.getContent()));
+
     }
 
     public String getId() {

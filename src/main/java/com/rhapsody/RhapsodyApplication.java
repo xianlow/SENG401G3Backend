@@ -11,11 +11,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-
-@EnableJpaRepositories("com.rhapsody.query.repository")
-@ComponentScan(basePackages = {"com.rhapsody.*", "com.rhapsody.query.repository"})
-@EntityScan("com.rhapsody.*")
-
+@EnableAutoConfiguration
+@EnableJpaRepositories("com.rhapsody")
 public class RhapsodyApplication {
 
 	public static void main(String[] args) {
