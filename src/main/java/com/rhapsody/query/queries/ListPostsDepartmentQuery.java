@@ -1,5 +1,6 @@
 package com.rhapsody.query.queries;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,4 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ListPostsDepartmentQuery {
     private String department;
+
 }
