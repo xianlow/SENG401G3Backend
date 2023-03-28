@@ -4,8 +4,8 @@ USE rhapsody_database;
 
 DROP TABLE IF EXISTS EVENTS;
 CREATE TABLE EVENTS (
-	eventId			VARCHAR(254) UNIQUE,
-    timestamp		DATE,
-    aggregateId		TEXT,
-    PRIMARY KEY (eventId)
+	id			VARCHAR(100) UNIQUE,
+    title		VARCHAR(50),
+    content		VARCHAR(1000),
+    PRIMARY KEY (id)
 );
