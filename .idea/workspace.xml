@@ -4,44 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3650f863-133c-4609-befe-569ed0711fc9" name="Changes" comment="Axon added">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_19.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_configuration_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_configuration_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_disruptor_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_modelling_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_eventsourcing_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_eventsourcing_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_messaging_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_disruptor_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_modelling_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_messaging_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_server_connector_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_server_connector_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_spring_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_spring_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_spring_boot_autoconfigure_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_spring_boot_autoconfigure_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_spring_boot_starter_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_spring_boot_starter_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_test_4_5_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_axonframework_axon_test_4_5_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rhapsody.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rhapsody.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/RhapsodyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rhapsody/RhapsodyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/command/aggregate/PostsAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rhapsody/command/aggregate/PostsAggregate.java" afterDir="false" />
+    <list default="true" id="3650f863-133c-4609-befe-569ed0711fc9" name="Changes" comment="Functional with creating and getting all posts">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/command/controller/RhapsodyCommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rhapsody/command/controller/RhapsodyCommandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/config/SwaggerConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/model/rhapsody_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/projection/PostsRepositoryProjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rhapsody/projection/PostsRepositoryProjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/query/controller/PostsQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rhapsody/query/controller/PostsQueryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/query/entity/RhapsodyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rhapsody/query/entity/RhapsodyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/query/queries/ListPostsDepartmentQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rhapsody/query/queries/ListAllPostsQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rhapsody/query/service/PostsQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rhapsody/query/service/PostsQueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/RhapsodyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rhapsody/RhapsodyApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/command/aggregate/PostsAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rhapsody/command/aggregate/PostsAggregate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/command/controller/RhapsodyCommandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rhapsody/command/controller/RhapsodyCommandController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/command/service/PostsCommandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rhapsody/command/service/PostsCommandService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/projection/PostsRepositoryProjector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rhapsody/projection/PostsRepositoryProjector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/query/controller/PostsQueryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rhapsody/query/controller/PostsQueryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/query/entity/RhapsodyModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rhapsody/query/entity/RhapsodyModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/query/queries/ListPostsDepartmentQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rhapsody/query/service/PostsQueryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rhapsody/query/service/PostsQueryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679976792254</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Functional with creating and getting all posts">
+      <created>1680089885586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680089885586</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Functional with creating and getting all posts">
+      <created>1680089974884</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680089974884</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -183,7 +161,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/SN-10-Database-Functionality" />
+                        <option value="origin/Add_Axon" />
                       </list>
                     </value>
                   </entry>
@@ -215,6 +193,7 @@
     <MESSAGE value="Added functionality to add new posts api work" />
     <MESSAGE value="Added functionality to add new posts api work with the frontend" />
     <MESSAGE value="Axon added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Axon added" />
+    <MESSAGE value="Functional with creating and getting all posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functional with creating and getting all posts" />
   </component>
 </project>
