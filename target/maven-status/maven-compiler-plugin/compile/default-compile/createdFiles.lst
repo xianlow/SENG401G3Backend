@@ -1,0 +1,13 @@
+com\rhapsody\query\repository\PostsRepository.class
+com\rhapsody\query\queries\ListAllPostsQuery.class
+com\rhapsody\query\service\PostsQueryService.class
+com\rhapsody\command\controller\RhapsodyCommandController.class
+com\rhapsody\command\aggregate\PostsAggregate.class
+com\rhapsody\projection\PostsRepositoryProjector.class
+com\rhapsody\query\controller\PostsQueryController.class
+com\rhapsody\RhapsodyApplication.class
+com\rhapsody\query\entity\RhapsodyModel.class
+com\rhapsody\command\service\PostsCommandService.class
+com\rhapsody\command\commands\CreatePostCommand.class
+com\rhapsody\command\events\CreatePostEvent.class
+com\rhapsody\command\dto\PostsDTO.class
