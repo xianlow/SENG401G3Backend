@@ -23,5 +23,13 @@ public class RhapsodyModel {
     private String title;
     private String content;
     private String department;
+
+
+    public RhapsodyModel(RhapsodyModel rhapsodyModel) {
+        this.aggregateId = rhapsodyModel.aggregateId;
+        this.title = rhapsodyModel.title;
+        this.content = rhapsodyModel.content;
+        this.department = rhapsodyModel.department;
+    }
 }
 

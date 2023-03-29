@@ -1,31 +1,34 @@
 package com.rhapsody.command.aggregate;
 import com.rhapsody.command.commands.CreatePostCommand;
 import com.rhapsody.command.events.*;
-import com.rhapsody.query.queries.ListPostsDepartmentQuery;
 
 
-
+import com.rhapsody.query.entity.RhapsodyModel;
+import com.rhapsody.query.queries.ListAllPostsQuery;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
+import org.axonframework.modelling.command.AggregateMember;
 import org.axonframework.queryhandling.QueryHandler;
 import org.axonframework.spring.stereotype.Aggregate;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
 
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 import static org.axonframework.modelling.command.AggregateLifecycle.apply;
 
 @Aggregate
 public class PostsAggregate {
+
+
     @AggregateIdentifier
     private String id;
     private String title;
     private String content;
-    private final Map<String, String> POSTS = new HashMap<>();
+    private String department;
+
     protected PostsAggregate() {}
     @CommandHandler
     public PostsAggregate(CreatePostCommand command){
@@ -36,14 +39,10 @@ public class PostsAggregate {
         this.id = event.getId();
         this.title = event.getTitle();
         this.content = event.getContent();
-        POSTS.put(title, content);
-
+        this.department = event.getDepartment();
     }
 
-    @QueryHandler
-    public Map<String, String> handle(ListPostsDepartmentQuery query) {
-        return this.POSTS;
-    }
+
 
     public String getId() {
         return id;

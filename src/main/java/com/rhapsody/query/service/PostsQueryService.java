@@ -1,7 +1,7 @@
 package com.rhapsody.query.service;
 
 import com.rhapsody.query.entity.RhapsodyModel;
-import com.rhapsody.query.queries.ListPostsDepartmentQuery;
+import com.rhapsody.query.queries.ListAllPostsQuery;
 import lombok.AllArgsConstructor;
 import org.axonframework.eventsourcing.eventstore.EventStore;
 import org.axonframework.queryhandling.QueryGateway;
@@ -18,12 +18,12 @@ import java.util.stream.Collectors;
 public class PostsQueryService {
 
     private final QueryGateway queryGateway;
-    private final EventStore eventStore;
+    public CompletableFuture<List<RhapsodyModel>> findAllPosts(){
 
-
-    public CompletableFuture<List<RhapsodyModel>> listByDepartment(String department){
-        System.out.println(department);
-        return queryGateway.query(department, ResponseTypes.multipleInstancesOf(RhapsodyModel.class));
+        return queryGateway.query(new ListAllPostsQuery(), ResponseTypes.multipleInstancesOf(RhapsodyModel.class))
+                .thenApply(r -> r.stream()
+                        .map(RhapsodyModel::new)
+                        .collect(Collectors.toList()));
     }
 
 
