@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
-@RequestMapping(value = "/home")
+@RequestMapping
 @Api(value = "Administration commands", description = "Administration commands API")
 @AllArgsConstructor
 public class RhapsodyCommandController {
