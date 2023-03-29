@@ -14,14 +14,14 @@ import java.util.concurrent.CompletableFuture;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
-@RequestMapping("/posts")
+@RequestMapping
 @AllArgsConstructor
 public class PostsQueryController {
 
     private final PostsQueryService postsQueryService;
 
 
-    @GetMapping("/department")
+    @GetMapping("/")
     public CompletableFuture<List<RhapsodyModel>> findAllPosts() {
 
         return postsQueryService.findAllPosts();
