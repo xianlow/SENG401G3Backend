@@ -11,4 +11,4 @@ To run the backend we will first need to make sure we create a docker container 
 
 After this, to run our backend api, we need to run the maven project which will need the command mvn clean package spring-boot:run. The line 'clean package' is not necessary all the time but without it, sometimes it will not run properly especially on the first run. 
 
-With the api running, it will be listening on localhost:8081 which will be needed for the frontend but the api will be running on localhost:8080.
+With the api running, the front-end will be consuming the REST API from localhost:8081 which will be needed for the front-end functionalities to work but the api will be running on localhost:8080.
